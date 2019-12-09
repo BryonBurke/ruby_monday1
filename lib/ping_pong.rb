@@ -16,9 +16,12 @@ def ping_pong(user_number)
     number = number + 1
     if number % 3 === 0
       myarray.push("ding")
+    else if number % 5 === 0
+      myarray.push("dong")
     else
       myarray.push(number)
     end
   end
-    myarray
   end
+  myarray
+end

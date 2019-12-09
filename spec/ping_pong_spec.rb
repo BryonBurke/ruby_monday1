@@ -7,8 +7,14 @@ require('ping_pong')
 #   end
 # end
 
+# describe('#ping_pong1') do
+#   it("replaces instances of numbers divisible by 3, with predefined words") do
+#     expect(ping_pong(3)).to(eq([1,2,"ding"]))
+#   end
+# end
+
 describe('#ping_pong1') do
-  it("replaces instances of numbers divisible by 3, with predefined words") do
-    expect(ping_pong(3)).to(eq([1,2,"ding"]))
+  it("replaces instances of numbers divisible by 3 with 'ding' and words divisible by 5 with 'dong'") do
+    expect(ping_pong(6)).to(eq([1,2,"ding",4,"dong","ding"]))
   end
 end
